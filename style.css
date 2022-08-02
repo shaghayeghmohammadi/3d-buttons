@@ -1,0 +1,65 @@
+@font-face {
+  font-family: kalameh-black;
+  src: url(./KalamehWeb_Black.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: kalameh-black;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e9e8ee;
+}
+.wrapper {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  min-width: 180px;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 12px;
+  font-size: 2rem;
+  color: #e9e8ee;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.198);
+  transition: transform 200ms, box-shadow 200ms;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.blue {
+  background-color: #1197cc;
+  box-shadow: 0px 6px 0 #094c66, 0 11px rgba(0, 0, 0, 0.109);
+}
+.red {
+  background-color: #cc0000;
+  box-shadow: 4px 4px 0 #7c0000;
+}
+.disabled {
+  width: 400px;
+  background-color: silver;
+  color: rgb(163, 163, 163);
+  text-shadow: none;
+  box-shadow: 0 9px rgb(163, 163, 163);
+  margin-top: 30px;
+}
+.disabled:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px rgb(163, 163, 163);
+}
+.blue:active {
+  transform: translateY(4px);
+  box-shadow: 0 3px 0 #094c66;
+}
+.red:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: none;
+}
